@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+}
+
+* {
+  --color-background: #F3F6FD;
+}
+
+body {
+  font-family: "Comfortaa", sans-serif;
+  font-style: normal;
+  margin: 0;
+  background-color: var(--color-background);
+}
