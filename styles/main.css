@@ -10,12 +10,14 @@
 body {
   font-family: "Comfortaa", sans-serif;
   font-style: normal;
+  font-weight: 400;
   margin: 0;
   background-color: var(--color-background);
 }
 
 .app {
   display: flex;
+  /* gap: 50px; */
 }
 
 .logo {
@@ -53,7 +55,7 @@ body {
 }
 
 .menu__item:hover {
-  background-color: #6A6AFB;
+  background-color: #6a6afb;
 }
 
 .menu__item:hover img {
@@ -61,10 +63,10 @@ body {
 }
 
 .menu__item_active {
-  background-color: #5051F9;
+  background-color: #5051f9;
 }
 
-.menu__item_active img{
+.menu__item_active img {
   filter: brightness(0) invert(1);
 }
 
@@ -80,4 +82,157 @@ body {
 
 .menu__add:hover {
   background-color: #f7f7fe;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  min-width: 900px;
+  padding: 45px;
+}
+
+h1 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.progress {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 235px;
+}
+
+.progress__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.progress__name {
+  color: #000000;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.progress__percent {
+  color: #000000;
+  font-size: 12px;
+  line-height: 13px;
+}
+
+.progress__bar {
+  position: relative;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #e6e9ed;
+  height: 5px;
+}
+
+.progress__cover-bar {
+  position: absolute;
+  width: 50%;
+  height: 5px;
+  border-radius: 4px;
+  background-color: #5051f9;
+}
+
+main {
+  margin-top: 30px;
+}
+
+.habbit {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 10px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.habbit__day {
+  background-color: #fbfaff;
+  border-radius: 10px 0 0 10px;
+  border-right: 1px solid #e7ebfb;
+  font-size: 14px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 20px 40px;
+  min-width: 150px;
+}
+
+.habbit__comment {
+  font-size: 16px;
+  color: #23235f;
+  font-weight: 500;
+  line-height: 18px;
+  padding: 20px 15px;
+}
+
+.habbit__delete {
+  margin-left: auto;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.habbit__delete:hover {
+  background-color: #eff2ff;
+}
+
+.habbit__form {
+  position: relative;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+  padding: 0 10px 0 25px;
+}
+input {
+  box-sizing: border-box;
+  border: 1px solid rgb(231, 235, 251);
+  border-radius: 9px;
+  background: rgb(255, 255, 255);
+  padding: 12px 20px;
+  font-family: "Comfortaa", sans-serif;
+  flex: 1;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+input::placeholder {
+  color: #8899a8;
+}
+
+.input_icon {
+  padding-left: 45px;
+}
+
+.input__icon {
+  position: absolute;
+  top: 10px;
+  left: 45px;
+}
+
+.button {
+  border-radius: 9px;
+  background: rgb(237, 236, 254);
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 14px;
+  color: #5051f9;
+  padding: 14px 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover {
+  background: rgb(196, 193, 250);
 }
