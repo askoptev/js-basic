@@ -46,21 +46,21 @@ function rerenderMenu(activeHabbit) {
   for (const habbit of habbits) {
     const existed = document.querySelector(`[menu-habbit-id="${habbit.id}"]`);
     if (!existed) {
-      // create
+      // create      
       const element = document.createElement("button");
-      element.setAttribute(`menu-habbit-id="${habbit.id}"`);
+      element.setAttribute("menu-habbit-id", habbit.id);
       element.classList.add("menu__item");
       element.innerHTML = `<img src="/images/${habbit.icon}.svg" alt="${habbit.name}" />`;
       if (activeHabbit.id === habbit.id) {
-        element.classList.add(".menu__item_active");
+        element.classList.add("menu__item_active");
       }
       page.manu.appendChild(element);
       continue;
     }
     if (activeHabbit.id === habbit.id) {
-      existed.classList.add(".menu__item_active");
+      existed.classList.add("menu__item_active");
     } else {
-      existed.classList.remove(".menu__item_active");
+      existed.classList.remove("menu__item_active");
     }
   }
 }
@@ -73,5 +73,5 @@ function rerender(activeHabbitId) {
 // init
 (() => {
   loadData();
-  rerender(habbits[0].id);
+  rerender(habbits[1].id);
 })();
